@@ -9,25 +9,32 @@ import {
   ScrollView,
   KeyboardAvoidingView,
   Platform,
+  KeyboardType,
 } from 'react-native';
 
-import {Input, Button} from './components';
+import {Input, Button} from './component';
 
 const Login = () => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#b2dfdb'}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#ffa726'}}>
       <KeyboardAvoidingView
         style={{flex: 1}}
-        behavior={Platform.OS == 'android' ? null : 'padding'}>
-        <ScrollView style={{flex: 1}} bounces={false}>
+        behavior={
+          Platform.OS == 'android' ? null : 'padding'
+        } /* klavye acilinca yukari kaydirmak icin behavior:padding */
+      >
+        <ScrollView
+          style={{flex: 1}}
+          bounces={false} /* bounce ziplamayi onler ios icin    */
+        >
           <View style={{flex: 1}}>
             <Image
               source={require('./assets/cart.png')}
               style={styles.logoStyle}
             />
 
-            <Input holder="E-posta adresinizi giriniz.." />
-            <Input holder="Şifrenizi giriniz.." />
+            <Input holder="Enter your email ..." />
+            <Input holder="Enter your password ..." />
 
             <Button text="Giriş Yap" />
           </View>

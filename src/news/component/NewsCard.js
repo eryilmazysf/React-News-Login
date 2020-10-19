@@ -21,7 +21,7 @@ const NewsCard = ({news}) => {
   );
 };
 
-export {NewsCard};
+export  default NewsCard;
 
 const styles = StyleSheet.create({
   container: {

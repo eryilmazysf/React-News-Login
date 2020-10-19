@@ -9,7 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-import {NewsCard} from './components';
+import NewsCard from '../news/component/NewsCard';
 
 const news_data = [
   {
@@ -94,7 +94,7 @@ const News = () => {
 
   const listHeader = () => {
     return (
-      <>
+      <View>
         <Text style={{fontWeight: 'bold', fontSize: 50, margin: 10}}>News</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {banner_data.map((banner_item) => {
@@ -111,14 +111,14 @@ const News = () => {
             );
           })}
         </ScrollView>
-      </>
+      </View>
     );
   };
 
   return (
     <SafeAreaView>
       <FlatList
-        keyExtractor={(item, index) => index.toString()}
+        keyExtractor={(item, index) => index.toString()} //her bir elemani hafizasinda tutmak icin unique
         data={news_data}
         renderItem={renderNewsData}
         numColumns={2}
