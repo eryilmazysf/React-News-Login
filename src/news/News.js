@@ -100,6 +100,7 @@ const News = () => {
           {banner_data.map((banner_item) => {
             return (
               <Image
+                key={banner_item.id}
                 source={{uri: banner_item.imageUrl}}
                 style={{
                   width: Dimensions.get('window').width * 0.9,
