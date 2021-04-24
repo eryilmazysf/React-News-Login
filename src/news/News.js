@@ -95,7 +95,15 @@ const News = () => {
   const listHeader = () => {
     return (
       <View>
-        <Text style={{fontWeight: 'bold', fontSize: 50, margin: 10}}>News</Text>
+        <Text
+          style={{
+            fontWeight: 'bold',
+            fontSize: 50,
+            margin: 10,
+            textAlign: 'center',
+          }}>
+          News
+        </Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {banner_data.map((banner_item) => {
             return (
@@ -105,7 +113,7 @@ const News = () => {
                 style={{
                   width: Dimensions.get('window').width * 0.9,
                   height: Dimensions.get('window').height / 4,
-                  margin: 5,
+                  margin: 25,
                   borderRadius: 10,
                 }}
               />
