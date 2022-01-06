@@ -61,8 +61,7 @@ const banner_data = [
   {
     id: 0,
     text: 'Best Prime Day 2020 Alexa',
-    imageUrl:
-      'https://cnet4.cbsistatic.com/img/7bnQrNgv4FtUTWdPZYO29fufx-A=/1200x630/2019/11/20/0aff1d1e-92fc-4b88-aee5-850c550e09a6/cnet-black-friday-best-buy-echo-show-5.jpg',
+    imageUrl: 'https://miro.medium.com/max/720/0*UjBJ_iTNESi6Zevk.jpg',
   },
   {
     id: 1,
